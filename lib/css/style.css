@@ -1,0 +1,78 @@
+/*
+Colors
+Peach = #F9D423
+Mango = #FF4E50
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 95vh;
+    background: #FF4E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to left bottom,
+        rgba(249,212,35, 0.5),
+        rgba(255,78,80, 0.8));  /* Chrome 10-25, Safari 5.1-6 */
+    background:
+       linear-gradient(
+       to left bottom,
+       rgba(249,212,35, 0.5),
+       rgba(255,78,80, 0.8)), /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+       url("../images/hilltop-background.jpg");
+}
+
+.wht-Circle {
+    width: 200px;
+    border-radius: 50%;
+    background: #FFF;
+}
+
+.codeSlinger, .wht-Circle {
+    position: absolute;
+    height: 200px;
+    top: 10%;
+    order: 1;
+    transform: translate(-50%);
+}
+
+.text-box {
+    order: 2;
+    position: absolute;
+    top: 50%;
+}
+
+.heading-Primary {
+    color: #fff;
+}
+
+.heading-Primary-Main {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+.heading-Primary-Sub {
+    letter-spacing: 5px;
+    font-weight: 400;
+}
