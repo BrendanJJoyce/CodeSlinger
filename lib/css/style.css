@@ -10,6 +10,8 @@ Mango = #FF4E50
     box-sizing: border-box;
 }
 
+
+
 html{
     background-color: #fff;
 }
@@ -48,31 +50,60 @@ header{
 
 .codeSlinger, .wht-Circle {
     position: absolute;
+    display: inline-block;
     height: 200px;
-    top: 10%;
+    top: 100px;
     order: 1;
     transform: translate(-50%);
 }
 
 .text-box {
+    display: inline-block;
     order: 2;
     position: absolute;
-    top: 50%;
 }
 
 .heading-Primary {
     color: #fff;
+    padding: 5vw;
 }
 
 .heading-Primary-Main {
     display: block;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 50px;
-    letter-spacing: 10px;
+}
+@media screen and (min-height: 600px) {
+    .text-box {
+        top: 50vh;
+    }
 }
 
-.heading-Primary-Sub {
-    letter-spacing: 5px;
-    font-weight: 400;
+@media screen and (min-height: 600px) {
+    .text-box {
+        top: 325px;
+    }
+}
+
+@media screen and (min-width: 550px){
+    .heading-Primary-Main {
+        font-size: 5vh;
+        letter-spacing: 2vw;
+    }
+
+    .heading-Primary-Sub {
+        letter-spacing: 1vw;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width: 550px){
+    .heading-Primary-Main {
+        font-size: 4vh;
+        letter-spacing: 5px;
+    }
+     .heading-Primary-Sub {
+        font-size: 3h;
+        letter-spacing: 2vw;
+        font-weight: 400;
+    }
 }
