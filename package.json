@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/BrendanJJoyce/CodeSlinger/issues"
   },
-  "homepage": "https://github.com/BrendanJJoyce/CodeSlinger#readme"
+  "homepage": "https://github.com/BrendanJJoyce/CodeSlinger#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
