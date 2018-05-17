@@ -66,25 +66,49 @@ header{
 .heading-Primary {
     color: #fff;
     padding: 5vw;
+
+    backface-visibility: hidden;
 }
 
 .heading-Primary-Main {
     display: block;
     text-transform: uppercase;
     font-weight: 500;
+
+    animation: fadeInRight 1s ease-in-out 0s;
+}
+.heading-Primary-Sub {
+    display: block;
+    opacity: 0;
+    animation: fadeInRight 1.0s  ease-in-out  1s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(70px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@media screen and (max-height: 600px) {
+    .text-box {
+        top: 325px;
+    }
 }
 @media screen and (min-height: 600px) {
     .text-box {
         top: 50vh;
     }
 }
-
 @media screen and (min-height: 600px) {
     .text-box {
         top: 325px;
     }
 }
-
 @media screen and (min-width: 550px){
     .heading-Primary-Main {
         font-size: 5vh;
