@@ -4,22 +4,30 @@ Peach = #F9D423
 Mango = #FF4E50
 */
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 
 
 html{
     background-color: #fff;
+    font-size: 62.5%;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
+    line-height: 1.6;
+    font-size: 1.6rem;
+
+    box-sizing: border-box;
+
 }
 
 header{
@@ -45,7 +53,7 @@ header{
 }
 
 .wht-Circle {
-    width: 200px;
+    width: 2rem;
     border-radius: 50%;
     background: #FFF;
 }
@@ -53,8 +61,8 @@ header{
 .codeSlinger, .wht-Circle {
     position: absolute;
     display: inline-block;
-    height: 20vh;
-    width: 20vh;
+    height: 20rem;
+    width: 20rem;
     top: 100px;
     order: 1;
     transform: translate(-50%);
@@ -111,7 +119,7 @@ header{
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     display: inline-block;
     border-radius: 100px;
 
