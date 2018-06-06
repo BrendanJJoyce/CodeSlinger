@@ -52,13 +52,13 @@ header{
        clip-path: polygon(100% 0, 100% 85%, 55% 100%, 0 100%, 0 0);
 }
 
-.wht-Circle {
+.logo__wht-Circle {
     width: 2rem;
     border-radius: 50%;
-    background: #FFF;
+    background: #fff;
 }
 
-.codeSlinger, .wht-Circle {
+.logo__codeSlinger, .logo__wht-Circle {
     position: absolute;
     display: inline-block;
     height: 20rem;
@@ -68,7 +68,7 @@ header{
     transform: translate(-50%);
 }
 
-.text-box {
+.header__text-box {
     display: inline-block;
     order: 2;
     position: absolute;
@@ -86,7 +86,7 @@ header{
     backface-visibility: hidden;
 }
 
-.heading-Primary-Main {
+.heading-Primary--Main {
     display: block;
     text-transform: uppercase;
     font-weight: 500;
@@ -94,7 +94,7 @@ header{
     animation: fadeInRight 1s ease-in-out 0s;
 }
 
-.heading-Primary-Sub {
+.heading-Primary--Sub {
     display: block;
     opacity: 0;
     animation: fadeInRight 1.0s  ease-in-out  1s;
@@ -102,7 +102,7 @@ header{
     font-weight: 400;
 }
 
-.head-Btn {
+.headeR__Btn {
     position: absolute;
     top: 40vh;
     left: 50%;
@@ -137,7 +137,7 @@ header{
     transform: translateY(1px);
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
-.btn-wht {
+.btn--wht {
     color: #777;
     background-color: #fff;
 }
@@ -171,28 +171,28 @@ header{
     }
 }
 @media screen and (max-height: 600px) {
-    .text-box {
+    .header__text-box {
         top: 40%;
     }
 
 }
 
 @media screen and (min-width: 550px){
-    .heading-Primary-Main {
+    .heading-Primary--Main {
         font-size: 5vh;
         letter-spacing: 2vw;
     }
 
-    .heading-Primary-Sub {
+    .heading-Primary--Sub {
         letter-spacing: 1vw;
     }
 }
 @media screen and (max-width: 550px){
-    .heading-Primary-Main {
+    .heading-Primary--Main {
         font-size: 4vh;
         letter-spacing: 5px;
     }
-     .heading-Primary-Sub {
+     .heading-Primary--Sub {
         font-size: 3h;
         letter-spacing: 2vw;
     }
